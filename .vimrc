@@ -1,12 +1,13 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Modified version of the "basic" vimrc from;
+" <https://github.com/amix/vimrc/blob/master/vimrcs/basic.vim>
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Maintainer:
 "       Amir Salihefendic - @amix3k
 "
 " Awesome_version:
 "       Get this config, nice color schemes and lots of plugins!
-"
 "       Install the awesome version from:
-"
 "           https://github.com/amix/vimrc
 "
 " Sections:
