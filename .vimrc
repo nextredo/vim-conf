@@ -40,17 +40,41 @@ set relativenumber
 set hlsearch
 set showcmd
 
+" Tab setup
 set expandtab
 set tabstop=4
+set softtabstop=4
 set shiftwidth=4
 
-" set nowrap
+" Default clipboard
+set clipboard="autoselect,exclude:cons|linux"
+set nowrap
 
+" Character rendering
+" Render leading whitespace & invisble characters
+set listchars+=multispace:·
+set listchars+=lead:·
+set listchars+=leadmultispace:·
+set listchars+=trail:·
+set listchars+=tab:→▹
+set listchars+=extends:>
+set listchars+=precedes:<
+set listchars+=conceal:⭓
+set listchars+=nbsp:▵
+set list
+
+" Modelines
 set modeline
 set modelines=5
 
+" Misc
 set fixeol
 
+" Rulers
+set colorcolumn=80,100,120
+highlight ColorColumn ctermbg=0 guibg=lightgrey
+
+" Colours
 if (has('termguicolors'))
   set termguicolors
   " See :h xterm-true-color (reqd for alacritty)
@@ -58,13 +82,12 @@ if (has('termguicolors'))
   let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 endif
 
-" Rulers
-set colorcolumn=80,100,120
-highlight ColorColumn ctermbg=0 guibg=lightgrey
-
+" From Conventional Commits
+" <https://www.conventionalcommits.org/en/v1.0.0/>
 autocmd Filetype gitcommit setlocal spell textwidth=72
 
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
