@@ -30,6 +30,9 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Custom additions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+scriptencoding utf-8
+set encoding=utf-8
+
 syntax on
 filetype on
 filetype plugin on
@@ -52,10 +55,11 @@ set nowrap
 
 " Character rendering
 " Render leading whitespace & invisble characters
-set listchars+=multispace:·
+" Clear default "eol:$" string in vim
+set listchars=""
 set listchars+=lead:·
-set listchars+=leadmultispace:·
 set listchars+=trail:·
+set listchars+=multispace:·
 set listchars+=tab:→▹
 set listchars+=extends:>
 set listchars+=precedes:<
