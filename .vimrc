@@ -90,6 +90,8 @@ endif
 " <https://www.conventionalcommits.org/en/v1.0.0/>
 autocmd Filetype gitcommit setlocal spell textwidth=72
 
+" TODO Can't get this to work with syntax highlighting at the same time
+"autocmd Filetype tex setlocal spell spellang=en_au
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -116,7 +118,7 @@ au FocusGained,BufEnter * silent! checktime
 
 " :W sudo saves the file
 " (useful for handling the permission-denied error)
-command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
+command! WSUDO execute 'w !sudo tee % > /dev/null' <bar> edit!
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
