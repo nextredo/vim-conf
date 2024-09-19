@@ -118,7 +118,7 @@ au FocusGained,BufEnter * silent! checktime
 
 " :W sudo saves the file
 " (useful for handling the permission-denied error)
-command! WSUDO execute 'w !sudo tee % > /dev/null' <bar> edit!
+"command! WSUDO execute 'w !sudo tee % > /dev/null' <bar> edit!
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
