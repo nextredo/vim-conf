@@ -32,6 +32,8 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 scriptencoding utf-8
 set encoding=utf-8
+set fileencodings=utf-8,ascii,latin1
+set fileencoding=utf-8
 
 syntax on
 filetype on
@@ -39,7 +41,7 @@ filetype plugin on
 
 " Numbering
 set number
-set relativenumber
+" set relativenumber
 set hlsearch
 set showcmd
 
