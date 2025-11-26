@@ -130,10 +130,11 @@ au FocusGained,BufEnter * silent! checktime
 set so=4
 
 " Avoid garbled characters in Chinese language windows OS
-let $LANG='en'
-set langmenu=en
-source $VIMRUNTIME/delmenu.vim
-source $VIMRUNTIME/menu.vim
+" NOTE: Commented out - breaks :telescope planets in nvim
+"let $LANG='en'
+"set langmenu=en
+"source $VIMRUNTIME/delmenu.vim
+"source $VIMRUNTIME/menu.vim
 
 " Turn on the Wild menu
 set wildmenu
@@ -216,7 +217,8 @@ try
     colorscheme desert
     " Good: desert,
     " Close but no cigar: slate (comments are too dark)
-    " Ok: retrobox, evening, sorbet, zaibatsu
+    " Ok: retrobox,
+    " Eh: evening, sorbet, zaibatsu
 catch
 endtry
 
