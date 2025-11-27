@@ -214,10 +214,11 @@ if $COLORTERM == 'gnome-terminal'
 endif
 
 try
-    colorscheme desert
-    " Good: desert,
-    " Close but no cigar: slate (comments are too dark)
-    " Ok: retrobox,
+    colorscheme retrobox
+    " Good: habamax, retrobox, unokai (all require a new-ish vim version)
+    " Good enough: desert, default
+    " Close but no cigar: slate (comments too dark, C macros too loud)
+    " Odd: quiet
     " Eh: evening, sorbet, zaibatsu
 catch
 endtry
