@@ -215,11 +215,12 @@ endif
 
 try
     colorscheme retrobox
-    " Good: habamax, retrobox, unokai (all require a new-ish vim version)
+    " Good: habamax
+    " Good-ish: unokai
     " Good enough: desert, default
     " Close but no cigar: slate (comments too dark, C macros too loud)
     " Odd: quiet
-    " Eh: evening, sorbet, zaibatsu
+    " Eh: evening, sorbet, zaibatsu, koehler
 catch
 endtry
 
