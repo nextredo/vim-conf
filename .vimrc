@@ -32,8 +32,8 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 scriptencoding utf-8
 set encoding=utf-8
-set fileencodings=utf-8,ascii,latin1
-set fileencoding=utf-8
+setglobal fileencodings=utf-8,ascii,latin1
+setglobal fileencoding=utf-8
 
 syntax on
 filetype on
